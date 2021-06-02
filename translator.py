@@ -12,10 +12,10 @@ import numpy as np
 import os
 import random
 
-# from dotenv import load_dotenv
-# dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
-# if os.path.exists(dotenv_path):
-#     load_dotenv(dotenv_path)
+from dotenv import load_dotenv
+dotenv_path = os.path.join(os.path.dirname(__file__), '.env')
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
 
 YOUDAO_URL=os.environ.get("YOUDAO_URL") or None
 YOUDAO_APP_KEY=os.environ.get("YOUDAO_APP_KEY") or None
